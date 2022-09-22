@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'pwd'
+                bat 'pwd'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn clean'
+                bat 'mvn clean'
             }
         }
 
